@@ -2,7 +2,7 @@ $clern-blue: #14b8eb;
 $clern-lightGreen:#64b95a;
 $clern-lightYellow: #d3ef8b;
 $clern-dark-text: #322c2e;
-$clern-white-a-bit-purple: #f3f7ff;
+$clern-grey: #f3f7ff;
 $variable-text-small-1:0.9rem;
 $variable-text-small-2:0.75rem;
 $variable-text-small-3:0.5rem;
@@ -118,6 +118,8 @@ a {
 
 
 .header {
+    box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+
     &__social .fab {
         border-radius: 50%;
         background-color: rgba(117, 223, 255, 0.5);
@@ -133,6 +135,9 @@ a {
 
 
 
+.main {
+    background-color: $clern-grey;
+}
 
 
 
@@ -144,6 +149,63 @@ a {
 
 
 
+.page {
+
+    h1,
+    h2 {
+        color: $clern-lightGreen;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__quote {
+        color: $clern-blue;
+    }
+
+    &__deco-line {
+        width: 3.75rem;
+        height: 2px;
+        background-color: $clern-lightGreen;
+        display: inline-block;
+        margin-bottom: 1.75rem;
+    }
+
+    .social {
+
+
+        .fab {
+            color: white;
+            background-color: black;
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+
+            filter: grayscale(10);
+            opacity: 0.2;
+        }
+
+        .fab:hover {
+            color: blue;
+            background-color: transparent;
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+
+    .comments {
+        color: $clern-blue;
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+
+        .fas {
+            opacity: 0.2;
+            filter: grayscale(50);
+        }
+
+
+    }
+}
 
 .newsletter {
     .container {

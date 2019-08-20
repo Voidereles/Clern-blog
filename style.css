@@ -102,6 +102,11 @@ a {
           box-shadow: 0 2px 0 0 lightgreen;
 }
 
+.header {
+  -webkit-box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+          box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+}
+
 .header__social .fab {
   border-radius: 50%;
   background-color: rgba(117, 223, 255, 0.5);
@@ -113,6 +118,61 @@ a {
 .header__social .fab:hover {
   background-color: #00ace0;
   cursor: pointer;
+}
+
+.main {
+  background-color: #f3f7ff;
+}
+
+.page h1,
+.page h2 {
+  color: #64b95a;
+}
+
+.page img {
+  width: 100%;
+}
+
+.page__quote {
+  color: #14b8eb;
+}
+
+.page__deco-line {
+  width: 3.75rem;
+  height: 2px;
+  background-color: #64b95a;
+  display: inline-block;
+  margin-bottom: 1.75rem;
+}
+
+.page .social .fab {
+  color: white;
+  background-color: black;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  -webkit-filter: grayscale(10);
+          filter: grayscale(10);
+  opacity: 0.2;
+}
+
+.page .social .fab:hover {
+  color: blue;
+  background-color: transparent;
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.page .comments {
+  color: #14b8eb;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page .comments .fas {
+  opacity: 0.2;
+  -webkit-filter: grayscale(50);
+          filter: grayscale(50);
 }
 
 .newsletter .container {
