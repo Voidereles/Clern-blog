@@ -30,6 +30,10 @@ a {
   font-size: 0.5rem;
 }
 
+.text-size-default {
+  font-size: 1rem;
+}
+
 .text-light-green {
   color: #64b95a !important;
 }
@@ -55,6 +59,12 @@ a {
   background: #5db65a;
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #5db65a), color-stop(100%, #93d057));
   background: linear-gradient(45deg, #5db65a 0%, #93d057 100%);
+}
+
+.bg-blue-grad {
+  background: #00ace0;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #00ace0), color-stop(100%, #75dfff));
+  background: linear-gradient(45deg, #00ace0 0%, #75dfff 100%);
 }
 
 .form-group {
@@ -175,15 +185,58 @@ a {
           filter: grayscale(50);
 }
 
-.newsletter .container {
-  padding-left: 10vw;
-  padding-right: 10vw;
+.instagram__item img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.instagram__item {
+  -webkit-box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+          box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+  background-color: white;
+}
+
+.instagram__item:hover {
+  background-color: #3fbae1;
+  cursor: pointer;
+}
+
+.instagram__item:hover::after {
+  content: "\f16d";
+  font-family: FontAwesome;
+  font-size: 2rem;
+  background: #14b8eb;
+  color: white;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  text-align: center;
+  line-height: 200px;
+}
+
+.newsletter {
+  margin-top: -100px;
 }
 
 .newsletter .row {
-  border-radius: 15vh;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 15vh;
   position: relative;
+  padding-top: 150px;
 }
 
 .newsletter__btn {
@@ -221,5 +274,31 @@ a {
 .newsletter .form-input:focus {
   -webkit-box-shadow: 0 2px 0 0 #fff;
           box-shadow: 0 2px 0 0 #fff;
+}
+
+.about__link {
+  color: white;
+}
+
+.about__link:hover {
+  color: white;
+}
+
+.about__date {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer__link {
+  color: #322c2e;
+}
+
+.footer__link:hover {
+  color: #14b8eb;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */

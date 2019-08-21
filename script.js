@@ -7,6 +7,33 @@ $('.owl-main').owlCarousel({
     items: 1
 })
 
+$('.owl-instagram').owlCarousel({
+    loop: true,
+    autoplay: true,
+    items: 1,
+    lazyLoad: true,
+    nav: false,
+    dots: false,
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 3,
+            nav: false
+        },
+        992: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+
+
 
 $('input').focus(function () {
     $(this).parents('.form-group').addClass('focused');

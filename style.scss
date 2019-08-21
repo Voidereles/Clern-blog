@@ -47,6 +47,10 @@ a {
     font-size: $variable-text-small-3;
 }
 
+.text-size-default {
+    font-size: $variable-text-medium-default;
+}
+
 .text-light-green {
     color: $clern-lightGreen !important;
 }
@@ -76,6 +80,16 @@ a {
     background: -o-linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
     background: -ms-linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
     background: linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
+}
+
+.bg-blue-grad {
+    background: rgba(0, 172, 224, 1);
+    background: -moz-linear-gradient(45deg, rgba(0, 172, 224, 1) 0%, rgba(117, 223, 255, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0, 172, 224, 1)), color-stop(100%, rgba(117, 223, 255, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(0, 172, 224, 1) 0%, rgba(117, 223, 255, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(0, 172, 224, 1) 0%, rgba(117, 223, 255, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(0, 172, 224, 1) 0%, rgba(117, 223, 255, 1) 100%);
+    background: linear-gradient(45deg, rgba(0, 172, 224, 1) 0%, rgba(117, 223, 255, 1) 100%);
 }
 
 .form-group {
@@ -207,16 +221,56 @@ a {
     }
 }
 
-.newsletter {
-    .container {
-        padding-left: 10vw;
-        padding-right: 10vw;
+.instagram {
+    &__item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
 
-    .row {
-        border-radius: 15vh;
-        border-bottom-right-radius: 0;
+    &__item {
+        box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
         position: relative;
+        transition: 1s;
+        z-index: 1;
+        background-color: white;
+    }
+
+    &__item:hover {
+        background-color: #3fbae1;
+        cursor: pointer;
+    }
+
+    &__item:hover::after {
+        content: "\f16d";
+        font-family: FontAwesome;
+        font-size: 2rem;
+        background: $clern-blue;
+        color: white;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+        text-align: center;
+        line-height: 200px;
+    }
+}
+
+.newsletter {
+    margin-top: -100px;
+
+    .row {
+        border-top-left-radius: 15vh;
+        position: relative;
+        padding-top: 150px;
     }
 
 
@@ -254,4 +308,35 @@ a {
         }
     }
 
+}
+
+.about {
+    &__link {
+        color: white;
+    }
+
+    &__link:hover {
+        color: white;
+    }
+
+    &__date {
+        opacity: 0.5;
+        text-decoration: none;
+    }
+}
+
+.footer {
+
+    &__link {
+        color: $clern-dark-text;
+    }
+
+    &__link:hover {
+        color: $clern-blue;
+        text-decoration: none;
+    }
+
+    &__copyright {
+        opacity: 0.5;
+    }
 }
