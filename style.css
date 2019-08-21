@@ -886,4 +886,13 @@ a {
 .footer__copyright {
   opacity: 0.5;
 }
+
+@media (max-width: 992px) {
+  .owl-main .fa-chevron-left {
+    left: -11%;
+  }
+  .owl-main .fa-chevron-right {
+    right: -11%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

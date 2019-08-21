@@ -936,4 +936,14 @@ a {
     }
 }
 
-@media (min-width:1920px) {}
+@media (max-width:992px) {
+    .owl-main {
+        .fa-chevron-left {
+            left: -11%;
+        }
+
+        .fa-chevron-right {
+            right: -11%;
+        }
+    }
+}
