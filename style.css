@@ -927,5 +927,14 @@ a {
   .page .w-75 {
     width: 100% !important;
   }
+  .owl-video__about {
+    width: 95%;
+  }
+  .owl-video__subtitle {
+    width: 100%;
+  }
+  .owl-main__heading {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

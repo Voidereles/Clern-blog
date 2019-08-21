@@ -987,4 +987,21 @@ a {
             width: 100% !important;
         }
     }
+
+    .owl-video {
+
+        &__about {
+            width: 95%
+        }
+
+        &__subtitle {
+            width: 100%;
+        }
+    }
+
+    .owl-main {
+        &__heading {
+            font-size: $variable-text-medium-1;
+        }
+    }
 }
