@@ -236,6 +236,10 @@ a {
   background-color: #f3f7ff;
 }
 
+.main-content {
+  margin-top: -100px;
+}
+
 .owl-main {
   width: 100%;
 }
