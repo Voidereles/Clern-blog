@@ -162,7 +162,6 @@ a {
 
 .header .navbar-collapse {
   z-index: 10;
-  background-color: white;
 }
 
 .header__logo {
@@ -897,12 +896,33 @@ a {
   opacity: 0.5;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 480px) {
   .owl-main .fa-chevron-left {
     left: -11%;
+    font-size: 2rem;
   }
   .owl-main .fa-chevron-right {
     right: -11%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #f3f7ff;
+    -webkit-box-shadow: 0 3px 9px 5px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 3px 9px 5px rgba(0, 0, 0, 0.4);
+  }
+  .header__nav-item {
+    width: 100%;
+    text-align: left !important;
+  }
+  .header__search-input {
+    width: 75%;
+  }
+  .header .z-fix {
+    background-color: #f3f7ff;
+    z-index: 10000;
   }
   .page .w-75 {
     width: 100% !important;

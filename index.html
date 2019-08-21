@@ -27,45 +27,44 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
     <header class="header">
-        <nav id="headerNavbar" class="navbar navbar-light  header__navbar navbar-expand-lg custom-carets"
+        <nav id="headerNavbar" class="navbar navbar-light header__navbar navbar-expand-lg custom-carets px-0"
             role="navigation">
-            <div class="row w-100 mx-auto d-flex justify-content-between">
+            <div class="row w-100 mx-auto d-flex justify-content-between z-fix">
                 <a class="navbar-brand col-3 p-4 mr-0" href="index.html">
                     <img src="images/logo.png" id="headerLogo" class="d-inline-block align-top header__logo" alt="">
                 </a>
 
-                <button id="navToggler" class="navbar-toggler" type="button" data-toggle="collapse"
+                <button id="navToggler" class="navbar-toggler mr-3" type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
 
-                <div class="collapse navbar-collapse col-12 col-lg-9" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse col-11 col-lg-9 px-5 px-lg-0" id="navbarNavAltMarkup">
 
                     <div class="row w-100 d-flex justify-content-between">
 
-                        <div class="navbar-nav header__nav  col-offset-1 col-lg-9 mx-auto">
+                        <div class="navbar-nav header__nav  offset-1 col-lg-9 mx-auto">
                             <ul id="headerNavPills"
-                                class="nav nav-pills nav-fill header__nav-pills flex-lg-row px-3 px-lg-0 mx-auto">
-                                <li class="nav-item header__nav-item px-2">
+                                class="nav nav-pills nav-fill header__nav-pills flex-lg-row px-0 mx-2 mx-lg-auto">
+                                <li class="nav-item header__nav-item px-0 px-lg-2">
                                     <a class="nav-link header__nav-link" href="#">Porady</a>
                                 </li>
-                                <li class="nav-item header__nav-item px-2">
+                                <li class="nav-item header__nav-item  px-0 px-lg-2">
                                     <a class="nav-link header__nav-link active" href="#">Promocje</a>
                                 </li>
-                                <li class="nav-item header__nav-item px-2">
+                                <li class="nav-item header__nav-item  px-0 px-lg-2">
                                     <a class="nav-link header__nav-link" href="#">Media</a>
                                 </li>
-                                <li class="nav-item header__nav-item px-2">
+                                <li class="nav-item header__nav-item  px-0 px-lg-2">
                                     <a class="nav-link header__nav-link" href="#">Dla Biznesu</a>
                                 </li>
-                                <li class="nav-item header__nav-item px-2">
+                                <li class="nav-item header__nav-item  px-0 px-lg-2">
                                     <a class="nav-link header__nav-link" href="#">O nas</a>
                                 </li>
-                                <li class="nav-item header__nav-item px-2">
+                                <li class="nav-item header__nav-item  px-0 px-lg-2">
                                     <a class="nav-link header__nav-link" href="#">Kontakt</a>
                                 </li>
                             </ul>
@@ -73,23 +72,23 @@
 
 
 
-                        <div class="header__social col-lg-3 m-0 p-0">
-                            <div class="row p-0">
-                                <i class="fab fa-facebook-f p-2 mx-1"></i>
-                                <i class="fab fa-twitter p-2 mx-1"></i>
-                                <i class="fab fa-instagram p-2 mx-1"></i>
+                        <div class="header__social col-12 col-lg-3 offset-1 mx-auto mx-lg-0 py-5 py-lg-0 p-0">
+                            <div class="row px-3 p-lg-0 ">
+                                <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
+                                <i class="fab fa-twitter p-2 mx-2 mx-lg-1"></i>
+                                <i class="fab fa-instagram p-2 mx-2 mx-lg-1"></i>
 
-                                <input class="header__search-input mx-2">
-                                <div class="header__search-icon-container bg-green-grad">
+                                <input class="header__search-input mx-2 mt-4 mt-lg-0">
+                                <div class="header__search-icon-container bg-green-grad mt-4 mt-lg-0">
                                     <svg class="header__search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.3 511.6"
                                         xml:space="preserve">
 
                                         <path d="M350.1,407.4c-104.6,70-233.1,40.4-300.7-43.7c-70.6-87.8-63.8-211.7,8.9-291c77.9-84.9,204.2-95.5,293.4-31.9
-                c49.5,35.3,80.4,83,91.1,143c10.6,59.7-1.7,114.9-35.7,166.5c1.7,1.2,3.6,2.3,5.2,3.8c28.8,28.7,57.6,57.4,86.2,86.2
-                c21.2,21.4,14.9,56.1-12.1,67.7c-16.2,6.9-33.4,3.3-46.7-10c-28.4-28.4-56.8-56.8-85.1-85.2C353,411.3,351.7,409.4,350.1,407.4z
-                 M227.7,75.1c-79.2-2.4-150,58.8-152.6,144.2c-2.4,77.6,56.6,148.3,142,152.2c80.3,3.6,150.4-57.2,154.3-141.8
-                C375.1,148.3,312.3,78.1,227.7,75.1z" />
+            c49.5,35.3,80.4,83,91.1,143c10.6,59.7-1.7,114.9-35.7,166.5c1.7,1.2,3.6,2.3,5.2,3.8c28.8,28.7,57.6,57.4,86.2,86.2
+            c21.2,21.4,14.9,56.1-12.1,67.7c-16.2,6.9-33.4,3.3-46.7-10c-28.4-28.4-56.8-56.8-85.1-85.2C353,411.3,351.7,409.4,350.1,407.4z
+             M227.7,75.1c-79.2-2.4-150,58.8-152.6,144.2c-2.4,77.6,56.6,148.3,142,152.2c80.3,3.6,150.4-57.2,154.3-141.8
+            C375.1,148.3,312.3,78.1,227.7,75.1z" />
                                     </svg>
 
 
@@ -106,7 +105,7 @@
 
         </nav>
     </header>
-    <main class="main">
+    <main class="main mt-2 mt-lg-0">
 
 
         <section class="slider">

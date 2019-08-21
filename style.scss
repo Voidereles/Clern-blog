@@ -178,7 +178,6 @@ a {
 
     .navbar-collapse {
         z-index: 10;
-        background-color: white;
     }
 
     box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
@@ -946,14 +945,40 @@ a {
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:480px) {
     .owl-main {
         .fa-chevron-left {
             left: -11%;
+            font-size: 2rem;
         }
 
         .fa-chevron-right {
             right: -11%;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .navbar {
+        background-color: $clern-grey;
+        box-shadow: 0 3px 9px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .header {
+        &__nav-item {
+            width: 100%;
+            text-align: left !important;
+        }
+
+
+        &__search-input {
+            width: 75%;
+        }
+
+        .z-fix {
+            background-color: $clern-grey;
+            z-index: 10000;
         }
     }
 
