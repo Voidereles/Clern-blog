@@ -41,16 +41,18 @@ $('.owl-tips').owlCarousel({
     responsive: {
         0: {
             items: 1,
-            nav: true
+            nav: false,
+            loop: true,
         },
         600: {
             items: 2,
-            nav: false
+            nav: false,
+            loop: true
         },
         992: {
             items: 3,
-            nav: true,
-            loop: false
+            nav: false,
+            loop: true
         }
     }
 })
