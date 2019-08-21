@@ -237,6 +237,7 @@ a {
 
 .owl-main__item {
   position: relative;
+  min-height: 500px;
   height: calc(100vh - 60px);
 }
 

@@ -2,6 +2,7 @@ $('.owl-main').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
+    lazyLoad: true,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     autoplay: true,
     dots: true,
@@ -38,6 +39,7 @@ $('.owl-tips').owlCarousel({
     loop: true,
     margin: 15,
     autoplay: true,
+    lazyLoad: true,
     responsive: {
         0: {
             items: 1,
@@ -61,6 +63,7 @@ $('.owl-video').owlCarousel({
     loop: true,
     margin: 15,
     autoplay: true,
+    lazyLoad: true,
     items: 1
 })
 
@@ -68,6 +71,7 @@ $('.owl-articles').owlCarousel({
     loop: true,
     margin: 15,
     autoplay: true,
+    lazyLoad: true,
     items: 1,
     responsive: {
         0: {
