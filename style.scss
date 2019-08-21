@@ -341,6 +341,34 @@ a {
         padding: 5px;
     }
 
+    &__item:hover {
+        background: $clern-blue;
+        color: white !important;
+    }
+
+    &__item:hover &__title {
+        color: white;
+    }
+
+    &__item:hover &__more {
+        border-radius: 25px;
+        width: 40%;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    &__item:hover &__more-dots {
+        right: 5px;
+        color: $clern-blue;
+    }
+
+    &__item:hover &__more-hidden {
+        left: 38%;
+        z-index: 2;
+        display: inline-block;
+        color: $clern-blue;
+    }
+
     &__item {
         -webkit-box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.1);
         -moz-box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.1);
@@ -390,24 +418,6 @@ a {
         width: 32px;
         box-shadow: rgba(0, 172, 224, 0.3) -1px -1px 5px 3px;
         z-index: 2;
-    }
-
-    &__more:hover {
-        border-radius: 25px;
-        width: 40%;
-        background-color: white;
-        cursor: pointer;
-    }
-
-    &__more:hover &__more-dots {
-        right: 5px;
-        color: $clern-blue;
-    }
-
-    &__more:hover &__more-hidden {
-        left: 38%;
-        z-index: 2;
-        display: inline-block;
     }
 
     &__more-hidden {
@@ -531,6 +541,34 @@ a {
         box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.1);
         background: white;
         border-bottom-right-radius: 35px;
+    }
+
+    &__item:hover {
+        background: $clern-blue;
+        color: white !important;
+    }
+
+    &__item:hover &__title {
+        color: white;
+    }
+
+    &__item:hover &__more {
+        border-radius: 25px;
+        width: 40%;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    &__item:hover &__more-dots {
+        right: 5px;
+        color: $clern-blue;
+    }
+
+    &__item:hover &__more-hidden {
+        left: 38%;
+        z-index: 2;
+        display: inline-block;
+        color: $clern-blue;
     }
 
     &__img-container {
