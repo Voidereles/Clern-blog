@@ -920,13 +920,35 @@ a {
         color: white;
     }
 
+    &__heading {
+        font-size: $variable-text-medium-1;
+    }
+
+
     &__link:hover {
         color: white;
+    }
+
+    .link-hover-green &__link:hover {
+        color: $clern-lightGreen !important;
     }
 
     &__date {
         opacity: 0.5;
         text-decoration: none;
+    }
+
+
+    .social .fab {
+        border-radius: 50%;
+        background-color: rgba(117, 223, 255, 0.5);
+        color: white;
+        transition: $fast;
+    }
+
+    .social .fab:hover {
+        background-color: rgba(0, 172, 224, 1);
+        cursor: pointer;
     }
 }
 

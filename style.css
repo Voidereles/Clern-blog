@@ -875,13 +875,34 @@ a {
   color: white;
 }
 
+.about__heading {
+  font-size: 1.5rem;
+}
+
 .about__link:hover {
   color: white;
+}
+
+.link-hover-green .about__link:hover {
+  color: #64b95a !important;
 }
 
 .about__date {
   opacity: 0.5;
   text-decoration: none;
+}
+
+.about .social .fab {
+  border-radius: 50%;
+  background-color: rgba(117, 223, 255, 0.5);
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about .social .fab:hover {
+  background-color: #00ace0;
+  cursor: pointer;
 }
 
 .footer__link {
