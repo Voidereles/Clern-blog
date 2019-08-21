@@ -449,8 +449,13 @@ a {
 }
 
 .owl-video {
+    .owl-stage {
+        border-bottom-right-radius: 35px;
+    }
+
     .owl-item {
         border-bottom-right-radius: 35px;
+        box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
     }
 
     &__item {
@@ -494,6 +499,7 @@ a {
         z-index: 1;
         text-align: center;
         line-height: 300px;
+        border-bottom-right-radius: 35px;
     }
 
     &__about {

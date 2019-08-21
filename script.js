@@ -40,6 +40,7 @@ $('.owl-tips').owlCarousel({
     margin: 15,
     autoplay: true,
     lazyLoad: true,
+    responsiveClass: true,
     responsive: {
         0: {
             items: 1,
@@ -73,6 +74,7 @@ $('.owl-articles').owlCarousel({
     autoplay: true,
     lazyLoad: true,
     items: 1,
+    responsiveClass: true,
     responsive: {
         0: {
             items: 1,
