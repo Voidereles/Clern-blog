@@ -171,6 +171,16 @@ a {
 
 
 .header {
+    .navbar-toggler {
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .navbar-collapse {
+        z-index: 10;
+        background-color: white;
+    }
+
     box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
     max-height: 100px;
 
@@ -944,6 +954,12 @@ a {
 
         .fa-chevron-right {
             right: -11%;
+        }
+    }
+
+    .page {
+        .w-75 {
+            width: 100% !important;
         }
     }
 }
