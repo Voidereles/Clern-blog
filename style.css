@@ -247,14 +247,16 @@ a {
 .owl-main__item {
   position: relative;
   min-height: 500px;
-  height: calc(100vh - 60px);
+  height: 100vh;
 }
 
 .owl-main__img {
   position: absolute;
   max-width: 100%;
   width: 100%;
-  height: 50rem;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: auto;
   z-index: -1;
   opacity: 0.1;
