@@ -138,6 +138,11 @@ a {
 
 .header {
     box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+    max-height: 100px;
+
+    &__logo {
+        max-height: 60px;
+    }
 
     &__social .fab {
         border-radius: 50%;
@@ -149,6 +154,52 @@ a {
     &__social .fab:hover {
         background-color: rgba(0, 172, 224, 1);
         cursor: pointer;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        border-bottom: 2px solid $clern-blue;
+        background: transparent;
+        background-color: transparent;
+        color: $clern-dark-text;
+        border-radius: 0;
+    }
+
+    &__nav-link {
+        color: $clern-dark-text;
+    }
+
+    &__nav-link:hover {
+        color: $clern-blue;
+    }
+
+    &__search-icon-container {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__search-svg {
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    &__search-svg path {
+        fill: white;
+    }
+
+    &__search-input {
+        width: 20%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: $variable-text-small-2;
+    }
+
+    &__search-input:hover+.fab {
+        display: none;
     }
 }
 

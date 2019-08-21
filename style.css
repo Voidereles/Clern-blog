@@ -120,6 +120,11 @@ a {
 .header {
   -webkit-box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
           box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+  max-height: 100px;
+}
+
+.header__logo {
+  max-height: 60px;
 }
 
 .header__social .fab {
@@ -133,6 +138,52 @@ a {
 .header__social .fab:hover {
   background-color: #00ace0;
   cursor: pointer;
+}
+
+.header .nav-pills .nav-link.active,
+.header .nav-pills .show > .nav-link {
+  border-bottom: 2px solid #14b8eb;
+  background: transparent;
+  background-color: transparent;
+  color: #322c2e;
+  border-radius: 0;
+}
+
+.header__nav-link {
+  color: #322c2e;
+}
+
+.header__nav-link:hover {
+  color: #14b8eb;
+}
+
+.header__search-icon-container {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header__search-svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.header__search-svg path {
+  fill: white;
+}
+
+.header__search-input {
+  width: 20%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.75rem;
+}
+
+.header__search-input:hover + .fab {
+  display: none;
 }
 
 .main {
