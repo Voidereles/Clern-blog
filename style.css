@@ -112,6 +112,11 @@ a {
           box-shadow: 0 2px 0 0 lightgreen;
 }
 
+.tip {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 .header {
   -webkit-box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
           box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
@@ -143,6 +148,10 @@ a {
   width: 100%;
 }
 
+.page__author-date {
+  opacity: 0.5;
+}
+
 .page__quote {
   color: #14b8eb;
 }
@@ -150,9 +159,111 @@ a {
 .page__deco-line {
   width: 3.75rem;
   height: 2px;
-  background-color: #64b95a;
+  background-color: #14b8eb;
   display: inline-block;
   margin-bottom: 1.75rem;
+}
+
+.page__text {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.page__border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page__border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page__changer .fas {
+  font-size: 4rem;
+  color: #14b8eb;
+  line-height: 100%;
+}
+
+.page__changer:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page__other-page-title {
+  color: #14b8eb;
+  text-decoration: underline;
+}
+
+.page__comments-section {
+  color: #14b8eb;
+}
+
+.page .comments-section__heading {
+  font-size: 1.25rem;
+  color: #14b8eb;
+}
+
+.page .comments-section__avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.page .comments-section__content {
+  font-size: 0.9rem;
+}
+
+.page .comments-section__author {
+  margin: 0;
+}
+
+.page .comments-section__date {
+  opacity: 0.5;
+}
+
+.page .comments-section__answer {
+  color: #14b8eb;
+}
+
+.page .comments-section__answer:hover {
+  color: #14b8eb;
+}
+
+.page .comments-section__btn {
+  display: inline-block;
+  position: relative;
+  background: #00ace0;
+  font-size: 0.9rem;
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #00ace0), color-stop(100%, #75dfff));
+  background: linear-gradient(45deg, #00ace0 0%, #75dfff 100%);
+  -webkit-transition: 0.5s, color 0.2s;
+  transition: 0.5s, color 0.2s;
+  -webkit-box-shadow: rgba(20, 184, 235, 0.5) 0px 5px 12px 0px;
+  box-shadow: rgba(20, 184, 235, 0.5) 0px 5px 12px 0px;
+  z-index: 2;
+  border-radius: 40px;
+  width: 100px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+
+.page .form-label {
+  left: initial;
+  color: #322c2e;
+  opacity: 0.5;
+}
+
+.page .form-input {
+  -webkit-box-shadow: 0 1px 0 0 rgba(25, 25, 25, 0.4);
+          box-shadow: 0 1px 0 0 rgba(25, 25, 25, 0.4);
+  color: #322c2e;
+  max-width: 100%;
+}
+
+.page .form-input:focus {
+  -webkit-box-shadow: 0 2px 0 0 #14b8eb;
+          box-shadow: 0 2px 0 0 #14b8eb;
+  color: #14b8eb;
+  opacity: 1;
 }
 
 .page .social .fab {
