@@ -1,36 +1,18 @@
-// $('.owl-main').owlCarousel({
-//     loop: true,
-//     margin: 10,
-//     nav: true,
-//     lazyLoad: true,
-//     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-//     // autoplay: true,
-//     dots: true,
-//     items: 1
-// })
 
-$('.owl-instagram').owlCarousel({
+
+$('.owl-articles').owlCarousel({
     loop: true,
+    margin: 15,
     autoplay: true,
-    items: 1,
-    lazyLoad: true,
-    nav: false,
-    dots: false,
-    loop: true,
     responsiveClass: true,
     responsive: {
         0: {
             items: 1,
-            nav: true
-        },
-        600: {
-            items: 3,
             nav: false
         },
         992: {
-            items: 4,
-            nav: true,
-            loop: false
+            items: 2,
+            nav: false
         }
     }
 })
@@ -40,39 +22,6 @@ $('.owl-tips').owlCarousel({
     margin: 15,
     autoplay: true,
     lazyLoad: true,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: false,
-            loop: true,
-        },
-        600: {
-            items: 2,
-            nav: false,
-            loop: true
-        },
-        992: {
-            items: 3,
-            nav: false,
-            loop: true
-        }
-    }
-})
-
-$('.owl-video').owlCarousel({
-    loop: true,
-    margin: 15,
-    autoplay: true,
-    lazyLoad: true,
-    items: 1
-})
-
-$('.owl-articles').owlCarousel({
-    loop: true,
-    margin: 15,
-    autoplay: true,
-    lazyLoad: true,
     items: 1,
     responsiveClass: true,
     responsive: {
@@ -81,13 +30,49 @@ $('.owl-articles').owlCarousel({
             nav: true
         },
         992: {
-            items: 2,
+            items: 3,
             nav: false
         }
     }
 })
 
 
+$('.owl-instagram').owlCarousel({
+    loop: true,
+    autoplay: true,
+    lazyLoad: true,
+    items: 1,
+    nav: false,
+    dots: false,
+    responsiveClass: true,
+    responsive: {
+
+        992: {
+            items: 4,
+            nav: false
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        0: {
+            items: 1,
+            nav: false
+        }
+    }
+})
+
+
+$('.owl-video').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    lazyLoad: true,
+    nav: false,
+    dots: false,
+    video: true,
+    items: 1
+})
 
 $('input').focus(function () {
     $(this).parents('.form-group').addClass('focused');
@@ -103,6 +88,17 @@ $('input').blur(function () {
     }
 })
 
+let windowWidth = window.innerWidth;
+if (windowWidth > 992 && windowWidth < 2560) {
+    $(".header__search-input").focusin(function () {
+        $('.header__social .row').addClass('move-left');
+    });
+
+    $(".header__search-input").focusout(function () {
+        $('.header__social .row').removeClass('move-left');
+    });
+
+}
 
 
 
@@ -150,7 +146,7 @@ $(document).ready(function () {
         onTranslate: moved,
         loop: true,
         nav: true,
-        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        navText: [" <img src='images/svg/light-arrow-left.svg' class='fa fa-chevron-left'>", " <img src='images/svg/light-arrow-right.svg' class='fa fa-chevron-right'>"],
         responsive: {
             0: {
                 items: 1

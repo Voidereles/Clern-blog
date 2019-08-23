@@ -1,12 +1,14 @@
-$clern-blue: #14b8eb;
-$clern-lightGreen:#64b95a;
+$clern-blue: #14b9ec;
+$clern-lightGreen:#66ba5a;
 $clern-lightYellow: #d3ef8b;
 $clern-dark-text: #322c2e;
 $clern-grey: #f3f7ff;
-$variable-text-small-1:0.9rem;
+
+$variable-text-small-1:0.8rem;
 $variable-text-small-2:0.75rem;
 $variable-text-small-3:0.5rem;
 $variable-text-medium-default:1rem;
+$variable-text-medium-3:0.9rem;
 $variable-text-medium-2:1.25rem;
 $variable-text-medium-1:1.5rem;
 $variable-text-big-2:2.5rem;
@@ -47,6 +49,10 @@ a {
     font-size: $variable-text-small-3;
 }
 
+.text-medium-3 {
+    font-size: $variable-text-medium-3;
+}
+
 .text-size-default {
     font-size: $variable-text-medium-default;
 }
@@ -76,7 +82,7 @@ a {
 }
 
 .bg-green-grad {
-    background-color: #5DB65A;
+    background-color: #8dce57;
     background: rgba(93, 182, 90, 1);
     background: -moz-linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(93, 182, 90, 1)), color-stop(100%, rgba(147, 208, 87, 1)));
@@ -84,6 +90,11 @@ a {
     background: -o-linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
     background: -ms-linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
     background: linear-gradient(45deg, rgba(93, 182, 90, 1) 0%, rgba(147, 208, 87, 1) 100%);
+}
+
+.green-shadow {
+    box-shadow: rgba(141, 206, 97, 0.54) 0px 1px 10px 2px;
+
 }
 
 .bg-blue-grad {
@@ -109,11 +120,12 @@ a {
     background-color: transparent;
     z-index: 10;
     transition: transform 150ms ease-out, font-size 150ms ease-out;
+    font-size: $variable-text-medium-3;
 }
 
 .focused .form-label {
     transform: translateY(-125%);
-    font-size: .75em;
+    font-size: $variable-text-small-2;
 }
 
 .form-input {
@@ -155,6 +167,7 @@ a {
     z-index: 2;
     color: white;
     border: 2px solid transparent;
+    font-size: $variable-text-medium-3;
 }
 
 .show-more-articles a {
@@ -175,6 +188,12 @@ a {
 
 
 .header {
+    box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
+
+    &__navbar {
+        height: 120px;
+    }
+
     .navbar-toggler {
         height: 40px;
         margin-top: 20px;
@@ -184,11 +203,22 @@ a {
         z-index: 10;
     }
 
-    box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
-    max-height: 100px;
+
+    &__logo-container {
+        position: relative;
+        text-align: center;
+    }
 
     &__logo {
-        max-height: 60px;
+        max-height: 2.5rem;
+    }
+
+    &__logo-container::after {
+        content: '.blog';
+        font-style: italic;
+        color: $clern-lightGreen;
+        position: absolute;
+        bottom: -7px;
     }
 
     &__social .fab {
@@ -196,6 +226,9 @@ a {
         background-color: rgba(117, 223, 255, 0.5);
         color: white;
         transition: $fast;
+        width: 32px;
+        text-align: center;
+        opacity: 1;
     }
 
     &__social .fab:hover {
@@ -224,17 +257,32 @@ a {
         border-radius: 50%;
         width: 2rem;
         height: 2rem;
+        position: relative;
         text-align: center;
         cursor: pointer;
+        transition: $fast;
+    }
+
+    &__search-icon-container:hover {
+        background: white;
     }
 
     &__search-svg {
         width: 0.75rem;
         height: 0.75rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
     }
 
     &__search-svg path {
         fill: white;
+        transition: $fast;
+    }
+
+    &__search-icon-container:hover &__search-svg path {
+        fill: $clern-dark-text;
     }
 
     &__search-input {
@@ -243,11 +291,15 @@ a {
         outline: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         font-size: $variable-text-small-2;
+        transition: width $fast;
     }
 
-    &__search-input:hover+.fab {
-        display: none;
-    }
+}
+
+
+.move-left {
+    transform: translateX(-10vw);
+    width: calc(100% + 10vw);
 }
 
 
@@ -267,14 +319,14 @@ a {
     &__item {
         position: relative;
         min-height: 500px;
-        height: 100vh;
+        height: 50vh;
     }
 
     &__img {
         position: absolute;
         max-width: 100%;
         width: 100%;
-        height: 800px;
+        height: 100%;
         object-fit: cover;
         margin: auto;
         z-index: -1;
@@ -294,10 +346,9 @@ a {
     }
 
     &__content {
-        width: 60%;
         margin: 0 auto;
         color: white;
-        padding-top: 200px;
+        padding-top: 80px;
     }
 
     &__deco-line {
@@ -337,7 +388,7 @@ a {
         top: 40%;
         color: white;
         margin: 0 50px;
-        font-size: 4rem;
+        max-width: 70px;
     }
 
     .fa-chevron-left {
@@ -419,7 +470,7 @@ a {
     }
 
     &__subtitle {
-        font-size: $variable-text-small-2;
+        font-size: $variable-text-small-1;
     }
 
     &__more {
@@ -456,6 +507,13 @@ a {
 }
 
 .owl-video {
+
+    margin-left: 5px;
+
+    .owl-stage-outer {
+        margin-right: 3px;
+    }
+
     .owl-stage {
         border-bottom-right-radius: 35px;
     }
@@ -481,17 +539,21 @@ a {
         transition: 1s;
         z-index: 1;
         background-color: white;
+        overflow: hidden;
     }
 
-    &__img-container img {
+    &__video {
         height: 300px;
+        width: 100%;
         border-bottom-right-radius: 35px;
+        z-index: -1;
     }
 
     &__img-container::after {
-        content: "\f144";
-        font-family: FontAwesome;
-        font-size: 2rem;
+        content: '';
+        // content: "\f144";
+        // font-family: FontAwesome;
+        // font-size: 2rem;
         background: $clern-lightGreen;
         color: white;
         opacity: 0.9;
@@ -529,7 +591,7 @@ a {
     }
 
     &__subtitle {
-        font-size: $variable-text-small-2;
+        font-size: $variable-text-small-1;
         line-height: 1;
         width: 80%;
     }
@@ -711,10 +773,15 @@ a {
     }
 
     &__changer {
+
         .fas {
-            font-size: 4rem;
-            color: $clern-blue;
-            line-height: 100%;
+            width: 100%;
+            height: 100%;
+            transition: $fast;
+        }
+
+        .fas:hover {
+            opacity: 0.5;
         }
     }
 
@@ -779,6 +846,14 @@ a {
             cursor: pointer;
             color: white;
             text-transform: uppercase;
+            border: 2px solid transparent;
+            transition: $fast;
+        }
+
+        &__btn:hover {
+            background: white;
+            color: $clern-dark-text;
+            border: 2px solid $clern-blue;
         }
     }
 
@@ -805,19 +880,20 @@ a {
     .social {
 
 
-        .fab {
+        i {
             color: white;
             background-color: black;
             width: 2rem;
             height: 2rem;
             text-align: center;
+            border-radius: 2px;
 
             filter: grayscale(10);
             opacity: 0.2;
         }
 
-        .fab:hover {
-            color: blue;
+        i:hover {
+            color: $clern-blue;
             background-color: transparent;
             opacity: 1;
             filter: grayscale(0);
@@ -894,12 +970,17 @@ a {
 
     &__btn {
         border-radius: 35px;
-        border-bottom-right-radius: 0;
         background-color: white;
         color: $clern-lightGreen;
         border: 3px solid transparent;
+        font-size: $variable-text-medium-3;
+        text-transform: uppercase;
         transition: $fast;
         box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 5px 3px;
+    }
+
+    &__heading {
+        font-size: $variable-text-big-3
     }
 
     &__btn:hover {
@@ -949,26 +1030,47 @@ a {
     &__date {
         opacity: 0.5;
         text-decoration: none;
+        font-size: $variable-text-small-1;
     }
 
 
-    .social .fab {
+    &__social .fab {
         border-radius: 50%;
-        background-color: rgba(117, 223, 255, 0.5);
+        background-color: rgba(20, 185, 236, 0.5);
         color: white;
         transition: $fast;
+        width: 32px;
+        text-align: center;
+        opacity: 1;
     }
 
-    .social .fab:hover {
-        background-color: rgba(0, 172, 224, 1);
+    &__social .fab:hover {
+        background-color: $clern-blue;
         cursor: pointer;
     }
 }
 
 .footer {
+    background-color: #f7f7f5;
 
     &__link {
         color: $clern-dark-text;
+    }
+
+    &__logo {
+        max-height: 2.5rem;
+    }
+
+    &__logo-container {
+        position: relative;
+    }
+
+    &__logo-container::after {
+        content: '.blog';
+        font-style: italic;
+        color: $clern-lightGreen;
+        position: absolute;
+        bottom: -17px;
     }
 
     &__link:hover {
@@ -978,18 +1080,54 @@ a {
 
     &__copyright {
         opacity: 0.5;
+        transform: translateX(2rem);
     }
+}
+
+@media (min-width:992px) {
+
+    .header {
+        &__search-input {
+            transform: translateY(calc(-50% + 3px));
+            transition: transform $fast;
+        }
+
+        &__search-input:focus {
+            transform: translateY(0px);
+            width: calc(20% + 2vw);
+        }
+
+
+
+        &__social .row {
+            background-color: white;
+            transition: transform $fast;
+        }
+
+        .social-icons {
+            background-color: white;
+        }
+    }
+
+    .your-ad {
+        margin-left: -10px !important;
+
+        &__container {
+            margin-left: 0 !important;
+        }
+    }
+
 }
 
 @media (max-width:480px) {
     .owl-main {
         .fa-chevron-left {
-            left: -11%;
+            left: -45px;
             font-size: 2rem;
         }
 
         .fa-chevron-right {
-            right: -11%;
+            right: -45px;
             font-size: 2rem;
         }
     }
@@ -999,6 +1137,7 @@ a {
     .navbar {
         background-color: $clern-grey;
         box-shadow: 0 3px 9px 5px rgba(0, 0, 0, 0.4);
+        height: 60px;
     }
 
     .header {
@@ -1039,6 +1178,21 @@ a {
         &__heading {
             font-size: $variable-text-medium-1;
         }
+
+        &__item {
+            height: calc(100vh - 60px);
+        }
+
+
+        .fa-chevron-left {
+            left: -45px;
+            font-size: 2rem;
+        }
+
+        .fa-chevron-right {
+            right: -45px;
+            font-size: 2rem;
+        }
     }
 }
 
@@ -1047,33 +1201,35 @@ a {
 
 
 
-
+//those fancy owl-carousel dots
 .owl-dots {
     position: absolute;
     bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 40px;
-    ;
+}
+
+.owl-dots button {
+    outline: none;
 }
 
 .owl-dots .owl-dot span {
-    transition: all .5s;
-    height: 10px;
-    width: 10px;
-    border: 2px solid white;
+    height: 2px;
+    width: 2px;
+    box-shadow: inset white 0 0 2px 2px;
+    box-sizing: border-box;
     background-color: transparent !important;
     border-radius: 50%;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 5px;
     float: left;
+    outline: none;
 
 }
 
 .owl-dots .active span {
-    height: 20px;
-    width: 20px;
-    transform: translate(-2px, -20px);
+    transform: translate(-2px, -13px) scale(1.5);
+    margin-right: 6px;
 }
 
 #bar {
@@ -1092,7 +1248,7 @@ a {
     position: relative;
     background: #94d08b;
     z-index: 3000;
-    transform: translateY(-1rem);
+    transform: translateY(-14px);
 }
 
 .line-container {

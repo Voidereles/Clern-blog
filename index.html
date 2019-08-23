@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/ngn2ooc.css">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -28,11 +29,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header class="header">
-        <nav id="headerNavbar" class="navbar navbar-light header__navbar navbar-expand-lg custom-carets px-0"
+        <nav id="headerNavbar" class="navbar navbar-light header__navbar navbar-expand-xl custom-carets p-0"
             role="navigation">
             <div class="row w-100 mx-auto d-flex justify-content-between z-fix">
                 <a class="navbar-brand col-3 p-4 mr-0" href="index.html">
-                    <img src="images/logo.png" id="headerLogo" class="d-inline-block align-top header__logo" alt="">
+                    <div class="header__logo-container">
+                        <img src="images/logo.png" id="headerLogo" class="header__logo" alt="logo">
+                    </div>
+
                 </a>
 
                 <button id="navToggler" class="navbar-toggler mr-3" type="button" data-toggle="collapse"
@@ -74,12 +78,15 @@
 
                         <div class="header__social col-12 col-lg-3 offset-1 mx-auto mx-lg-0 py-5 py-lg-0 p-0">
                             <div class="row px-3 p-lg-0 ">
-                                <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
-                                <i class="fab fa-twitter p-2 mx-2 mx-lg-1"></i>
-                                <i class="fab fa-instagram p-2 mx-2 mx-lg-1"></i>
+
+                                <div class="social-icons">
+                                    <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
+                                    <i class="fab fa-twitter p-2 mx-2 mx-lg-1"></i>
+                                    <i class="fab fa-instagram p-2 mx-2 mx-lg-1"></i>
+                                </div>
 
                                 <input class="header__search-input mx-2 mt-4 mt-lg-0">
-                                <div class="header__search-icon-container bg-green-grad mt-4 mt-lg-0">
+                                <div class="header__search-icon-container bg-green-grad green-shadow mt-4 mt-lg-0">
                                     <svg class="header__search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.3 511.6"
                                         xml:space="preserve">
@@ -105,124 +112,163 @@
 
         </nav>
     </header>
-    <main class="main mt-2 mt-lg-0">
+    <main class="main">
 
 
         <section class="slider">
+
             <div class="owl-main owl-carousel wow fadeInUp">
                 <div class="owl-main__item">
 
+
+
+
+
                     <div class="owl-main__img-container">
 
                         <img class="owl-main__img" src="images/bg-place-1.jpg" alt="">
                     </div>
-                    <div class="owl-main__content">
+                    <div class="container">
+                        <div class="w-75 mx-auto">
+                            <div class="owl-main__content">
 
-                        <div class="row mb-4">
-                            <div class="col-6 col-lg-2 pl-0">
-                                <div
-                                    class="owl-main__category border-tl-br-radius w-100 text-center py-2 bg-green-grad">
-                                    Porady</div>
+                                <div class="row mb-4 mx-0">
+                                    <div class="col-6 col-lg-2 pl-0">
+                                        <div
+                                            class="owl-main__category border-tl-br-radius w-100 text-center py-2 bg-green-grad">
+                                            <a href="#" class="text-white">Porady</a></div>
+                                    </div>
+                                    <div class="owl-main__author-date">
+                                        <a href="#"
+                                            class="owl-main__author mb-0 font-weight-normal text-white d-block">Jan
+                                            Kowalski</a>
+                                        <time class="owl-main__date" datetime="2018-06-15">15 Czerwiec, '18</time>
+                                    </div>
+                                </div>
+
+                                <div class="row mx-0">
+                                    <div class="owl-main__deco-line d-none d-md-block col-1 mt-3 px-3"></div>
+
+                                    <h2 class="owl-main__heading col-12 col-lg-8"> <a href="#" class="text-white"> Jak
+                                            1 Jak dokładnie czyścić
+                                            panele drewniane bez
+                                            ich uszkodzenia?</a></h2>
+                                </div>
+
+                                <div class="row mt-5 mx-0">
+                                    <div class="owl-main__read-more read-more px-3 py-3">
+                                        <a class="px-3" href="blog-page.html">Czytaj więcej</a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="owl-main__author-date">
-                                <p class="owl-main__author mb-0 font-weight-normal">Jan Kowalski</p>
-                                <time class="owl-main__date" datetime="2018-06-15">15 Czerwiec, '18</time>
-                            </div>
+
+
                         </div>
-
-                        <div class="row">
-                            <div class="owl-main__deco-line d-none d-md-block col-1 mt-3 px-3"></div>
-
-                            <h2 class="owl-main__heading col-12 col-lg-8">Jak dokładnie czyścić panele drewniane bez
-                                ich uszkodzenia?</h2>
-                        </div>
-
-                        <div class="row mt-5">
-                            <div class="owl-main__read-more read-more px-3 py-3">
-                                <a class="px-3" href="blog-page.html">Czytaj więcej</a>
-                            </div>
-                        </div>
-
                     </div>
-
-
 
 
                 </div>
 
                 <div class="owl-main__item">
 
+
+
+
+
                     <div class="owl-main__img-container">
 
                         <img class="owl-main__img" src="images/bg-place-1.jpg" alt="">
                     </div>
-                    <div class="owl-main__content">
+                    <div class="container">
+                        <div class="w-75 mx-auto">
+                            <div class="owl-main__content">
 
-                        <div class="row mb-4">
-                            <div class="col-6 col-lg-2 pl-0">
-                                <div
-                                    class="owl-main__category border-tl-br-radius w-100 text-center py-2 bg-green-grad">
-                                    Porady</div>
+                                <div class="row mb-4 mx-0">
+                                    <div class="col-6 col-lg-2 pl-0">
+                                        <div
+                                            class="owl-main__category border-tl-br-radius w-100 text-center py-2 bg-green-grad">
+                                            <a href="#" class="text-white">Porady</a></div>
+                                    </div>
+                                    <div class="owl-main__author-date">
+                                        <a href="#"
+                                            class="owl-main__author mb-0 font-weight-normal text-white d-block">Jan
+                                            Kowalski</a>
+                                        <time class="owl-main__date" datetime="2018-06-15">15 Czerwiec, '18</time>
+                                    </div>
+                                </div>
+
+                                <div class="row mx-0">
+                                    <div class="owl-main__deco-line d-none d-md-block col-1 mt-3 px-3"></div>
+
+                                    <h2 class="owl-main__heading col-12 col-lg-8"> <a href="#" class="text-white"> Jak
+                                            2Jak dokładnie czyścić
+                                            panele drewniane bez
+                                            ich uszkodzenia?</a></h2>
+                                </div>
+
+                                <div class="row mt-5 mx-0">
+                                    <div class="owl-main__read-more read-more px-3 py-3">
+                                        <a class="px-3" href="blog-page.html">Czytaj więcej</a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="owl-main__author-date">
-                                <p class="owl-main__author mb-0 font-weight-normal">Jan Kowalski</p>
-                                <time class="owl-main__date" datetime="2018-06-15">15 Czerwiec, '18</time>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="owl-main__deco-line d-none d-md-block col-1 mt-3 px-3"></div>
-                            <h2 class="owl-main__heading col-12 col-lg-8">Ipsum</h2>
-                        </div>
 
-                        <div class="row mt-5">
-                            <div class="owl-main__read-more read-more px-3 py-3">
-                                <a class="px-3" href="blog-page.html">Czytaj więcej</a>
-                            </div>
                         </div>
-
                     </div>
-
-
 
 
                 </div>
 
                 <div class="owl-main__item">
 
+
+
+
+
                     <div class="owl-main__img-container">
 
                         <img class="owl-main__img" src="images/bg-place-1.jpg" alt="">
                     </div>
-                    <div class="owl-main__content">
+                    <div class="container">
+                        <div class="w-75 mx-auto">
+                            <div class="owl-main__content">
 
+                                <div class="row mb-4 mx-0">
+                                    <div class="col-6 col-lg-2 pl-0">
+                                        <div
+                                            class="owl-main__category border-tl-br-radius w-100 text-center py-2 bg-green-grad">
+                                            <a href="#" class="text-white">Porady</a></div>
+                                    </div>
+                                    <div class="owl-main__author-date">
+                                        <a href="#"
+                                            class="owl-main__author mb-0 font-weight-normal text-white d-block">Jan
+                                            Kowalski</a>
+                                        <time class="owl-main__date" datetime="2018-06-15">15 Czerwiec, '18</time>
+                                    </div>
+                                </div>
 
+                                <div class="row mx-0">
+                                    <div class="owl-main__deco-line d-none d-md-block col-1 mt-3 px-3"></div>
 
-                        <div class="row mb-4">
-                            <div class="col-6 col-lg-2 pl-0">
-                                <div
-                                    class="owl-main__category border-tl-br-radius w-100 text-center py-2 bg-green-grad">
-                                    Porady</div>
+                                    <h2 class="owl-main__heading col-12 col-lg-8"> <a href="#" class="text-white"> Jak
+                                            3Jak dokładnie czyścić
+                                            panele drewniane bez
+                                            ich uszkodzenia?</a></h2>
+                                </div>
+
+                                <div class="row mt-5 mx-0">
+                                    <div class="owl-main__read-more read-more px-3 py-3">
+                                        <a class="px-3" href="blog-page.html">Czytaj więcej</a>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="owl-main__author-date">
-                                <p class="owl-main__author mb-0 font-weight-normal">Jan Kowalski</p>
-                                <time class="owl-main__date" datetime="2018-06-15">15 Czerwiec, '18</time>
-                            </div>
+
+
                         </div>
-
-                        <div class="row">
-                            <div class="owl-main__deco-line d-none d-md-block col-1 mt-3 px-3"></div>
-                            <h2 class="owl-main__heading col-12 col-lg-8">Lorem</h2>
-                        </div>
-
-                        <div class="row mt-5">
-                            <div class="owl-main__read-more read-more px-3 py-3">
-                                <a class="px-3" href="blog-page.html">Czytaj więcej</a>
-                            </div>
-                        </div>
-
-
-
                     </div>
 
 
@@ -318,12 +364,38 @@
                         <div class="owl-video owl-carousel wow fadeInUp mt-4 col-12 col-lg-8">
                             <div class="owl-video__item">
                                 <div class="owl-video__img-container w-100">
-                                    <img src="images/bg-place-1.jpg" alt="">
+
+                                    <div class="owl-video__video" data-merge="1"><a class="owl-video"
+                                            href="https://www.youtube.com/watch?v=JoUrZlcdoFw"></a></div>
+
                                     <div class="owl-video__about text-small-1 text-white">
 
-                                        <time class="text-small-2" datetime="2018-06-15">15 Czerwiec
+                                        <time class="text-small-1" datetime="2018-06-15">15 Czerwiec
                                             2018</time>
-                                        <h4 class="owl-video__title mt-2">Zachowanie bezpieczeństwa w trakcie porządków
+                                        <h4 class="owl-video__title mt-2">Zachowanie bezpieczeństwa w trakcie
+                                            porządków
+                                        </h4>
+                                        <p class="owl-video__subtitle">Vestibulum commodo olutpat a, vcorawalis ac,
+                                            orawalis
+                                            orawalis
+                                            loarert nim
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="owl-video__item">
+                                <div class="owl-video__img-container w-100">
+
+                                    <div class="owl-video__video" data-merge="1"><a class="owl-video"
+                                            href="https://www.youtube.com/watch?v=JoUrZlcdoFw"></a></div>
+
+                                    <div class="owl-video__about text-small-1 text-white">
+
+                                        <time class="text-small-1" datetime="2018-06-15">15 Czerwiec
+                                            2018</time>
+                                        <h4 class="owl-video__title mt-2">Zachowanie bezpieczeństwa w trakcie
+                                            porządków
                                         </h4>
                                         <p class="owl-video__subtitle">Vestibulum commodo olutpat a, vcorawalis ac,
                                             orawalis
@@ -335,8 +407,8 @@
                             </div>
                         </div>
 
-                        <div class="your-ad col-12 col-lg-4 mt-4 pr-2">
-                            <div class="your-ad__container bg-white mr-3 h-100">
+                        <div class="your-ad col-12 col-lg-4 mt-4 pr-lg-2">
+                            <div class="your-ad__container bg-white mr-lg-2 ml-1 h-100">
                                 <p class="text-center your-ad__p">Miejsce na Twoją reklamę</p>
                             </div>
                         </div>
@@ -492,7 +564,7 @@
                                     numquam fugit ab illum deserunt, corrupti aliquam necessitatibus qui minima tenetur
                                     harum quasi labore perferendis porro architecto rerum!
                                 </p>
-                                <div class="row social mt-4">
+                                <div class="row about__social mt-4">
                                     <div class="col-12">
 
                                         <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
@@ -507,7 +579,7 @@
             </div>
         </section>
     </main>
-    <div class="footer bg-white">
+    <div class="footer">
         <div class="container">
             <div class="row px-5 text-center text-lg-left">
 
@@ -538,31 +610,36 @@
                             </ul>
                         </div>
 
-                        <div class="col-12 col-lg-8 text-right mt-4 mt-lg-0">
+                        <div class="col-12 col-lg-8 text-right mt-4 mt-lg-0 pr-3">
                             <a class="footer__logo-container" href="#start">
-                                <img src="images/logo.png" class="footer__logo pb-3" alt="">
+                                <img src="images/logo.png" class="footer__logo" alt="">
                             </a>
-                            <p class="footer__copyright"> &copy; 2019 clern.pl</p>
+                            <p class="footer__copyright mt-2"> &copy; 2019 clern.pl</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="https://kit.fontawesome.com/9b57601780.js"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+        integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'
+        async>
+    </script>
     <script src="https://code.jquery.com/jquery-3.1.0.js">
     </script>
+    <script src="owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/9b57601780.js"></script>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'
         integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous'>
     </script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
-        integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'>
-    </script>
 
 
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="script.js" async defer></script>
+
+
+
 </body>
 
 </html>

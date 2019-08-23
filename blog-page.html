@@ -28,11 +28,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header class="header">
-        <nav id="headerNavbar" class="navbar navbar-light header__navbar navbar-expand-lg custom-carets px-0"
+        <nav id="headerNavbar" class="navbar navbar-light header__navbar navbar-expand-xl custom-carets p-0"
             role="navigation">
             <div class="row w-100 mx-auto d-flex justify-content-between z-fix">
                 <a class="navbar-brand col-3 p-4 mr-0" href="index.html">
-                    <img src="images/logo.png" id="headerLogo" class="d-inline-block align-top header__logo" alt="">
+                    <div class="header__logo-container">
+                        <img src="images/logo.png" id="headerLogo" class="header__logo" alt="logo">
+                    </div>
+
                 </a>
 
                 <button id="navToggler" class="navbar-toggler mr-3" type="button" data-toggle="collapse"
@@ -74,21 +77,24 @@
 
                         <div class="header__social col-12 col-lg-3 offset-1 mx-auto mx-lg-0 py-5 py-lg-0 p-0">
                             <div class="row px-3 p-lg-0 ">
-                                <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
-                                <i class="fab fa-twitter p-2 mx-2 mx-lg-1"></i>
-                                <i class="fab fa-instagram p-2 mx-2 mx-lg-1"></i>
+
+                                <div class="social-icons">
+                                    <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
+                                    <i class="fab fa-twitter p-2 mx-2 mx-lg-1"></i>
+                                    <i class="fab fa-instagram p-2 mx-2 mx-lg-1"></i>
+                                </div>
 
                                 <input class="header__search-input mx-2 mt-4 mt-lg-0">
-                                <div class="header__search-icon-container bg-green-grad mt-4 mt-lg-0">
+                                <div class="header__search-icon-container bg-green-grad green-shadow mt-4 mt-lg-0">
                                     <svg class="header__search-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.3 511.6"
                                         xml:space="preserve">
 
                                         <path d="M350.1,407.4c-104.6,70-233.1,40.4-300.7-43.7c-70.6-87.8-63.8-211.7,8.9-291c77.9-84.9,204.2-95.5,293.4-31.9
-                    c49.5,35.3,80.4,83,91.1,143c10.6,59.7-1.7,114.9-35.7,166.5c1.7,1.2,3.6,2.3,5.2,3.8c28.8,28.7,57.6,57.4,86.2,86.2
-                    c21.2,21.4,14.9,56.1-12.1,67.7c-16.2,6.9-33.4,3.3-46.7-10c-28.4-28.4-56.8-56.8-85.1-85.2C353,411.3,351.7,409.4,350.1,407.4z
-                     M227.7,75.1c-79.2-2.4-150,58.8-152.6,144.2c-2.4,77.6,56.6,148.3,142,152.2c80.3,3.6,150.4-57.2,154.3-141.8
-                    C375.1,148.3,312.3,78.1,227.7,75.1z" />
+                c49.5,35.3,80.4,83,91.1,143c10.6,59.7-1.7,114.9-35.7,166.5c1.7,1.2,3.6,2.3,5.2,3.8c28.8,28.7,57.6,57.4,86.2,86.2
+                c21.2,21.4,14.9,56.1-12.1,67.7c-16.2,6.9-33.4,3.3-46.7-10c-28.4-28.4-56.8-56.8-85.1-85.2C353,411.3,351.7,409.4,350.1,407.4z
+                 M227.7,75.1c-79.2-2.4-150,58.8-152.6,144.2c-2.4,77.6,56.6,148.3,142,152.2c80.3,3.6,150.4-57.2,154.3-141.8
+                C375.1,148.3,312.3,78.1,227.7,75.1z" />
                                     </svg>
 
 
@@ -113,9 +119,11 @@
                     <div class="container p-5 text-justify">
                         <div class="row">
                             <div class="border-tl-br-radius col-12 col-lg-2 text-center py-2 text-white bg-green-grad">
-                                Porady
+                                <a href="#" class="text-white">Porady</a>
                             </div>
-                            <div class="page__author-date col-12 col-lg-8 py-2"> <u>Jan Nowak</u>, 15 Czerwiec 2018
+                            <div class="page__author-date col-12 col-lg-8 py-2"> <u> <a href="#" class="text-dark">Jan
+                                        Nowak</a></u>, 15
+                                Czerwiec 2018
                             </div>
 
                         </div>
@@ -274,14 +282,16 @@
                                 <hr>
                                 <div class="row">
                                     <div class="col-10 social ">
+                                        <a href="#"> <i class="fas fa-envelope p-2"></i></a>
                                         <a href="#"> <i class="fab fa-facebook-f p-2"></i></a>
-                                        <a href="#"> <i class="fab fa-facebook-f p-2"></i></a>
-                                        <a href="#"> <i class="fab fa-facebook-f p-2"></i></a>
-                                        <a href="#"> <i class="fab fa-facebook-f p-2"></i></a>
-                                        <a href="#"> <i class="fab fa-facebook-f p-2"></i></a>
-                                        <a href="#"> <i class="fab fa-facebook-f p-2"></i></a>
+                                        <a href="#"> <i class="fab fa-twitter p-2"></i></a>
+                                        <a href="#"> <i class="fab fa-google-plus-g p-2"></i></a>
+                                        <a href="#"> <i class="fab fa-instagram p-2"></i></a>
+                                        <a href="#"> <i class="fab fa-linkedin-in p-2"></i></a>
+                                        <a href="#"> <i class="fab fa-pinterest-p p-2"></i></a>
                                     </div>
-                                    <div class="col-2 comments "><i class="fas fa-comment"></i> 1</div>
+                                    <div class="col-2 comments "> <a href="#comments"> <i class="fas fa-comment"></i>
+                                            1</a></div>
                                 </div>
 
 
@@ -296,9 +306,16 @@
                                 <div class="row">
                                     <div class="col-6 page__changer">
                                         <div class="row">
-                                            <i class="fas fa-chevron-left col-2 px-0"></i>
+                                            <a href="#" class="col-2 px-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="fas fa-chevron-left">
+                                                    <path style="fill:#14b8eb;fill-rule:evenodd" id="path827"
+                                                        d="m 0.33558515,40.42975 c -0.443,-0.442 -0.443,-1.159 0.001,-1.603 L 38.895585,0.33275042 c 0.444,-0.443 1.163,-0.444 1.606,-0.001 0.443,0.442 0.442,1.15999998 -10e-4,1.60299998 L 1.9415851,40.42875 c -0.444,0.443 -1.16299995,0.444 -1.60599995,10e-4 z" />
+                                                    <path style="fill:#14b8eb;fill-opacity:1;fill-rule:evenodd"
+                                                        id="path829"
+                                                        d="m 0.33362511,38.830314 c -0.445,0.445 -0.445,1.168 0.001,1.613 l 38.70800089,38.742 c 0.445,0.446 1.167,0.446 1.610999,10e-4 0.445,-0.445 0.445,-1.167 0,-1.613 l -38.7079999,-38.742 c -0.446,-0.446 -1.167,-0.446 -1.61199999,-10e-4 z" />
+                                                </svg></a>
                                             <div class="col-10 col-lg-8">
-                                                <p>Poprzedni wpis:</p>
+                                                <p class="text-medium-3 mb-0">Poprzedni wpis:</p>
                                                 <p class="page__other-page-title">Zachowanie bezpieczeństwa w
                                                     trakcie porządków
                                                 </p>
@@ -312,11 +329,18 @@
                                         <div class="row">
 
                                             <div class="col-10 col-lg-8 offset-lg-2">
-                                                <p>Następny wpis:</p>
+                                                <p class="text-medium-3 mb-0">Następny wpis:</p>
                                                 <p class="page__other-page-title">Sprzatanie biura w 3 krokach
                                                 </p>
                                             </div>
-                                            <i class="fas fa-chevron-right col-2 px-0"></i>
+                                            <a href="#" class="col-2 px-0"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="fas fa-chevron-right">
+                                                    <path style="fill:#14b8eb;fill-rule:evenodd" id="path827"
+                                                        d="m 40.65179,40.42975 c 0.443,-0.442 0.443,-1.159 -10e-4,-1.603 L 2.09179,0.33275042 c -0.444,-0.443 -1.163,-0.444 -1.606,-0.001 -0.443,0.442 -0.442,1.15999998 0.001,1.60299998 l 38.559,38.4939996 c 0.444,0.443 1.163,0.444 1.606,10e-4 z" />
+                                                    <path style="fill:#14b8eb;fill-opacity:1;fill-rule:evenodd"
+                                                        id="path829"
+                                                        d="m 40.65375,38.830314 c 0.445,0.445 0.445,1.168 -0.001,1.613 l -38.708001,38.742 c -0.445,0.446 -1.167,0.446 -1.610999,10e-4 -0.445,-0.445 -0.445,-1.167 0,-1.613 l 38.708,-38.742 c 0.446,-0.446 1.167,-0.446 1.612,-10e-4 z" />
+                                                </svg></a>
 
                                         </div>
                                     </div>
@@ -335,7 +359,7 @@
                                         </div>
 
 
-                                        <div class="col-10 comments-section__content">
+                                        <div id="comments" class="col-10 comments-section__content">
                                             <p class="comments-section__author text-dark">Jan Nowak</p>
                                             <p class="comments-section__date text-dark">23 Czerwiec 2018, 10:23</p>
                                             <p class="comments-section__text text-dark">
@@ -398,8 +422,6 @@
 
 
 
-
-
         <section class="instagram mt-5">
             <div class="container">
                 <div class="w-75 mx-auto">
@@ -454,49 +476,55 @@
 
         <section class="about bg-white">
             <div class="container">
-                <div class="row px-5 text-center text-lg-left bg-blue-grad">
+                <div class="row px-5 text-center text-lg-left bg-white">
 
                     <div class="w-75 mx-auto">
                         <div class="row pt-0 py-5 text-white">
-                            <div class="about__column col-12 col-lg-4 mt-5 mt-lg-0">
-                                <h5 class="about__heading mb-4">Ostatnie wpisy:</h5>
+                            <div class="about__column col-12 col-lg-6 mt-5 mt-lg-0">
+                                <h5 class="about__heading mb-4 text-dark">Ostatnie wpisy:</h5>
                                 <ul class="list-unstyled">
-                                    <li class="mb-3"><a class="about__link" href="#">Co zrobić, żeby TWój facet pokochał
+                                    <li class="mb-3 link-hover-green"><a class="about__link text-dark" href="#">Co
+                                            zrobić, żeby Twój
+                                            facet pokochał
                                             sprzątanie?</a>
-                                        <time class="about__date d-block" datetime="2018-06-15">15 Czerwiec 2018</time>
+                                        <time class="about__date d-block text-dark" datetime="2018-06-15">15 Czerwiec
+                                            2018</time>
                                     </li>
 
-                                    <li class="mb-3"><a class="about__link" href="#">Czy warto płacić za usługi
+                                    <li class="mb-3 link-hover-green"><a class="about__link text-dark" href="#">Czy
+                                            warto płacić za
+                                            usługi
                                             sprzątania?</a>
-                                        <time class="about__date d-block" datetime="2018-06-15">15 Czerwiec 2018</time>
+                                        <time class="about__date d-block text-dark" datetime="2018-06-15">15 Czerwiec
+                                            2018</time>
                                     </li>
 
-                                    <li class="mb-3"><a class="about__link" href="#">Kot nasrał na dywan. Wykastruj
+                                    <li class="mb-3 link-hover-green"><a class="about__link text-dark" href="#">Kot
+                                            nasrał na dywan.
+                                            Wykastruj
                                             go.</a>
-                                        <time class="about__date d-block" datetime="2018-06-15">15 Czerwiec 2018</time>
+                                        <time class="about__date d-block text-dark" datetime="2018-06-15">15 Czerwiec
+                                            2018</time>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="about__column col-12 col-lg-4 mt-5 mt-lg-0">
-                                <h5 class="about__heading mb-4">Ostatnie komentarze
-                                </h5>
-                                <ul class="list-unstyled text-small-1 ">
-                                    <li class="mb-2"><a class="about__link" href="#">Lorem ipsum dolor, sit amet
-                                            consectetur adipisicing elit. Libero, optio quas. </a>
-                                        <p class="mt-3 mb-0 text-size-default">Jan Nowak</p>
-                                        <time class="about__date" datetime="2018-06-15">15 Czerwiec 2018, 10:23</time>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="about__column col-12 col-lg-4 mt-5 mt-lg-0">
-                                <h5 class="about__heading mb-4">Tagi:</h5>
-                                <p class="text-small-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <div class="about__column col-12 col-lg-6 mt-5 mt-lg-0">
+                                <h5 class="about__heading mb-4 text-dark">O nas:</h5>
+                                <p class="text-small-1 text-dark"> Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit.
                                     Pariatur quia rem eveniet
                                     numquam fugit ab illum deserunt, corrupti aliquam necessitatibus qui minima tenetur
                                     harum quasi labore perferendis porro architecto rerum!
                                 </p>
+                                <div class="row about__social mt-4">
+                                    <div class="col-12">
+
+                                        <i class="fab fa-facebook-f p-2 mx-2 mx-lg-1"></i>
+                                        <i class="fab fa-twitter p-2 mx-2 mx-lg-1"></i>
+                                        <i class="fab fa-instagram p-2 mx-2 mx-lg-1"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -504,7 +532,7 @@
             </div>
         </section>
     </main>
-    <div class="footer bg-white">
+    <div class="footer">
         <div class="container">
             <div class="row px-5 text-center text-lg-left">
 
@@ -535,11 +563,11 @@
                             </ul>
                         </div>
 
-                        <div class="col-12 col-lg-8 text-right mt-5 mt-lg-0">
+                        <div class="col-12 col-lg-8 text-right mt-4 mt-lg-0 pr-3">
                             <a class="footer__logo-container" href="#start">
-                                <img src="images/logo.png" class="footer__logo pb-3" alt="">
+                                <img src="images/logo.png" class="footer__logo" alt="">
                             </a>
-                            <p class="footer__copyright"> &copy; 2019 clern.pl</p>
+                            <p class="footer__copyright mt-2"> &copy; 2019 clern.pl</p>
                         </div>
                     </div>
                 </div>
