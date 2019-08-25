@@ -538,7 +538,6 @@ a {
 
     &__img-container {
         box-shadow: rgba(25, 25, 25, 0.1) -1px -1px 10px 3px;
-
         border-bottom-right-radius: 35px;
         position: relative;
         transition: 1s;
@@ -556,9 +555,6 @@ a {
 
     &__img-container::after {
         content: '';
-        // content: "\f144";
-        // font-family: FontAwesome;
-        // font-size: 2rem;
         background: $clern-lightGreen;
         color: white;
         opacity: 0.9;
@@ -574,6 +570,11 @@ a {
         text-align: center;
         line-height: 300px;
         border-bottom-right-radius: 35px;
+    }
+
+    &__img-container:hover::after,
+    &__img-container:hover &__about {
+        z-index: -1;
     }
 
     &__about {

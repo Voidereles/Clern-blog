@@ -551,6 +551,11 @@ a {
   border-bottom-right-radius: 35px;
 }
 
+.owl-video__img-container:hover::after,
+.owl-video__img-container:hover .owl-video__about {
+  z-index: -1;
+}
+
 .owl-video__about {
   width: 70%;
   height: 1.5rem;

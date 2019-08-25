@@ -1,78 +1,81 @@
+$(window).on('load', function () {
 
 
-$('.owl-articles').owlCarousel({
-    loop: true,
-    margin: 15,
-    autoplay: true,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: false
-        },
-        992: {
-            items: 2,
-            nav: false
+    $('.owl-video').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        lazyLoad: true,
+        nav: false,
+        dots: false,
+        video: true,
+        items: 1
+    })
+
+
+
+    $('.owl-articles').owlCarousel({
+        loop: true,
+        margin: 15,
+        autoplay: true,
+        lazyLoad: true,
+        items: 1,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            992: {
+                items: 2
+            }
         }
-    }
-})
+    })
 
-$('.owl-tips').owlCarousel({
-    loop: true,
-    margin: 15,
-    autoplay: true,
-    lazyLoad: true,
-    items: 1,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: true
-        },
-        992: {
-            items: 3,
-            nav: false
+    $('.owl-instagram').owlCarousel({
+        loop: true,
+        autoplay: true,
+        lazyLoad: true,
+        items: 1,
+        nav: false,
+        dots: false,
+        responsiveClass: true,
+        responsive: {
+
+            992: {
+                items: 4,
+                nav: false
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            0: {
+                items: 1,
+                nav: false
+            }
         }
-    }
-})
+    })
 
-
-$('.owl-instagram').owlCarousel({
-    loop: true,
-    autoplay: true,
-    lazyLoad: true,
-    items: 1,
-    nav: false,
-    dots: false,
-    responsiveClass: true,
-    responsive: {
-
-        992: {
-            items: 4,
-            nav: false
-        },
-        600: {
-            items: 2,
-            nav: false
-        },
-        0: {
-            items: 1,
-            nav: false
+    $('.owl-tips').owlCarousel({
+        loop: true,
+        margin: 15,
+        autoplay: true,
+        lazyLoad: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            992: {
+                items: 3,
+                nav: false
+            }
         }
-    }
+    })
 })
 
-
-$('.owl-video').owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    lazyLoad: true,
-    nav: false,
-    dots: false,
-    video: true,
-    items: 1
-})
 
 $('input').focus(function () {
     $(this).parents('.form-group').addClass('focused');
