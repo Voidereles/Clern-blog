@@ -194,12 +194,18 @@ a {
         height: 120px;
     }
 
-    .navbar-collapse {
-        z-index: 10;
+
+    &__nav {
+        padding-left: 15px;
     }
 
-    .navbar-brand {
-        width: 50%;
+    .navbar-toggler {
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .navbar-collapse {
+        z-index: 10;
     }
 
 
@@ -260,8 +266,6 @@ a {
         text-align: center;
         cursor: pointer;
         transition: $fast;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     &__search-icon-container:hover {
@@ -287,7 +291,7 @@ a {
     }
 
     &__search-input {
-        width: 90%;
+        width: 20%;
         border: none;
         outline: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1095,18 +1099,19 @@ a {
 
         &__search-input:focus {
             transform: translateY(0px);
+            width: calc(20% + 2vw);
         }
 
 
 
-        // &__social .row {
-        //     background-color: white;
-        //     transition: transform $fast;
-        // }
+        &__social .row {
+            background-color: white;
+            transition: transform $fast;
+        }
 
-        // .social-icons {
-        //     background-color: white;
-        // }
+        .social-icons {
+            background-color: white;
+        }
     }
 
     .your-ad {
@@ -1141,15 +1146,16 @@ a {
     }
 
     .header {
+
         &__nav-item {
             width: 100%;
             text-align: left !important;
         }
 
 
-        // &__search-input {
-        //     width: 75%;
-        // }
+        &__search-input {
+            width: 75%;
+        }
 
         .z-fix {
             background-color: $clern-grey;
@@ -1195,16 +1201,6 @@ a {
         }
     }
 }
-
-// @media (max-width:1680px) {
-
-    //     .header {
-    //         .navbar-brand {
-    //             width: 25%;
-    //         }
-    //     }
-
-    // }
 
 
 

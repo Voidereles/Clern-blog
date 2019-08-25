@@ -174,12 +174,17 @@ a {
   height: 120px;
 }
 
-.header .navbar-collapse {
-  z-index: 10;
+.header__nav {
+  padding-left: 15px;
 }
 
-.header .navbar-brand {
-  width: 50%;
+.header .navbar-toggler {
+  height: 40px;
+  margin-top: 20px;
+}
+
+.header .navbar-collapse {
+  z-index: 10;
 }
 
 .header__logo-container {
@@ -241,9 +246,6 @@ a {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .header__search-icon-container:hover {
@@ -271,7 +273,7 @@ a {
 }
 
 .header__search-input {
-  width: 90%;
+  width: 20%;
   border: none;
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1056,6 +1058,17 @@ a {
   .header__search-input:focus {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+    width: calc(20% + 2vw);
+  }
+  .header__social .row {
+    background-color: white;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .header .social-icons {
+    background-color: white;
   }
   .your-ad {
     margin-left: -10px !important;
@@ -1086,6 +1099,9 @@ a {
   .header__nav-item {
     width: 100%;
     text-align: left !important;
+  }
+  .header__search-input {
+    width: 75%;
   }
   .header .z-fix {
     background-color: #f3f7ff;
