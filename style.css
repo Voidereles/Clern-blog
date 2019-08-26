@@ -1135,6 +1135,11 @@ a {
     right: -45px;
     font-size: 2rem;
   }
+  .owl-main .fa-chevron-left,
+  .owl-main .fa-chevron-right {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 
 .owl-dots {

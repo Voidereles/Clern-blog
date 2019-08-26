@@ -1200,6 +1200,12 @@ a {
             right: -45px;
             font-size: 2rem;
         }
+
+        .fa-chevron-left,
+        .fa-chevron-right {
+            transform: scale(0.5);
+        }
+
     }
 }
 
