@@ -192,6 +192,7 @@ a {
 
     &__navbar {
         height: 120px;
+        overflow: hidden;
     }
 
 
@@ -1167,6 +1168,14 @@ a {
     .page {
         .w-75 {
             width: 100% !important;
+        }
+
+        &__changer {
+
+            .fa-chevron-left,
+            .fa-chevron-right {
+                transform: scale(0.5);
+            }
         }
     }
 

@@ -172,6 +172,7 @@ a {
 
 .header__navbar {
   height: 120px;
+  overflow: hidden;
 }
 
 .header__nav {
@@ -1114,6 +1115,11 @@ a {
   }
   .page .w-75 {
     width: 100% !important;
+  }
+  .page__changer .fa-chevron-left,
+  .page__changer .fa-chevron-right {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   .owl-video__about {
     width: 95%;
