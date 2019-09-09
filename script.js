@@ -17,7 +17,7 @@ $('input').blur(function () {
 })
 
 let windowWidth = window.innerWidth;
-if (windowWidth > 992 && windowWidth < 2560) {
+if (windowWidth > 992 && windowWidth < 1921) {
     $(".header__search-input").focusin(function () {
         $('.header__social .row').addClass('move-left');
     });
@@ -83,7 +83,7 @@ $(document).ready(function () {
     $('.owl-articles').owlCarousel({
         loop: true,
         margin: 15,
-        autoplay: true,
+        // autoplay: true,
         lazyLoad: true,
         items: 1,
         responsiveClass: true,
@@ -108,7 +108,7 @@ $(document).ready(function () {
         responsiveClass: true,
         responsive: {
 
-            992: {
+            1200: {
                 items: 4,
                 nav: false
             },
@@ -128,11 +128,12 @@ $(document).ready(function () {
         margin: 15,
         autoplay: true,
         lazyLoad: true,
+        dots: false,
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                nav: true
+                nav: false
             },
             992: {
                 items: 3,
