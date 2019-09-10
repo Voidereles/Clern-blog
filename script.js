@@ -74,8 +74,8 @@ $(document).ready(function () {
 
     $('.owl-video').owlCarousel({
         loop: true,
-        margin: 10,
-        // autoplay: true,
+        margin: 15,
+        autoplay: true,
         lazyLoad: true,
         nav: false,
         dots: false,
@@ -87,7 +87,7 @@ $(document).ready(function () {
     $('.owl-articles').owlCarousel({
         loop: true,
         margin: 15,
-        // autoplay: true,
+        autoplay: true,
         lazyLoad: true,
         items: 1,
         responsiveClass: true,
