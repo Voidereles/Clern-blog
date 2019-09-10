@@ -36,7 +36,7 @@ if (windowWidth > 992 && windowWidth < 1921) {
 
 
 $(document).ready(function () {
-    var time = 5; // time in seconds
+    var time = 555555; // time in seconds
 
     var $progressBar,
         $bar,
