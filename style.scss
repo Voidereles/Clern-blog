@@ -170,6 +170,16 @@ a {
     color: white;
     font-size: $variable-text-medium-3;
     box-shadow: 0px 9px 21px 0px rgba(144, 207, 87, 0.75);
+    transition: $fast;
+
+    &__deco-line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 .show-more-articles a {
@@ -179,7 +189,7 @@ a {
 }
 
 .show-more-articles:hover {
-    background: transparent;
+    background: $clern-grey;
     box-shadow: inset 0 0 0 2px $clern-lightGreen;
 }
 
@@ -600,7 +610,7 @@ a {
     }
 
     &__video {
-        height: 300px;
+        height: 320px;
         width: 100%;
         border-bottom-right-radius: 35px;
         z-index: -1;
@@ -610,7 +620,7 @@ a {
         content: '';
         background: $clern-lightGreen;
         color: white;
-        opacity: 0.9;
+        opacity: 1;
         top: 0;
         left: 0;
         right: 0;
@@ -626,7 +636,8 @@ a {
     }
 
     &__img-container:hover::after,
-    &__img-container:hover &__about {
+    &__img-container:hover &__about,
+    &__img-container--active::after {
         z-index: -1;
     }
 
@@ -659,7 +670,7 @@ a {
 }
 
 .your-ad {
-    height: 300px;
+    height: 320px;
 
     &__container {
         -webkit-box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.1);
@@ -680,6 +691,7 @@ a {
     .owl-item {
         border-bottom-right-radius: 35px;
         padding: 5px;
+        min-height: 322px;
 
         a {
             cursor: pointer;
@@ -736,6 +748,11 @@ a {
         box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.1);
         background: white;
         border-bottom-right-radius: 35px;
+        min-height: 322px;
+
+        &-content {
+            min-height: 322px;
+        }
     }
 
 
@@ -748,6 +765,8 @@ a {
     &__img-container img {
         object-fit: cover;
         height: 100%;
+
+        min-height: 322px;
     }
 
     &__opacity {
@@ -776,7 +795,7 @@ a {
         padding: 1.25rem 1rem;
         border-radius: 50%;
         bottom: 1.5rem;
-        right: 1.5rem;
+        right: 2rem;
         transition: 0.5s all;
         width: 40px;
         box-shadow: rgba(0, 172, 224, 0.3) -1px -1px 5px 3px;
@@ -951,7 +970,7 @@ a {
             box-shadow: rgba(20, 184, 235, 0.5) 0px 5px 12px 0px;
             z-index: 2;
             border-radius: 40px;
-            width: 100px;
+            width: 130px;
             cursor: pointer;
             color: white;
             text-transform: uppercase;
@@ -1233,7 +1252,7 @@ a {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1200px) {
 
 
     .header {
@@ -1269,7 +1288,9 @@ a {
 
 }
 
-@media (max-width:480px) {
+
+
+@media (max-width:1440px) {
 
     .owl-main {
         .fa-chevron-left {
@@ -1282,18 +1303,31 @@ a {
             font-size: 2rem;
         }
 
+        .fa-chevron-left,
+        .fa-chevron-right {
+            transform: scale(0.5);
 
-        &__item {
-            height: calc(100vh - 60px);
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:1200px) {
+
+    .container-fluid {
+        width: 100%;
+    }
+
+
+    &__vert-center {
+        transform: translateY(calc(50% - 80px));
+    }
+
 
     .navbar {
         background-color: $clern-grey;
-        box-shadow: 0 3px 9px 5px rgba(0, 0, 0, 0.4);
         min-height: 88px;
     }
 
@@ -1303,9 +1337,8 @@ a {
             text-align: left !important;
         }
 
-
         &__search-input {
-            width: 75%;
+            width: 65%;
         }
 
         .z-fix {
@@ -1314,11 +1347,24 @@ a {
         }
     }
 
-    .page {
-        .w-75 {
-            width: 100% !important;
-        }
+    .page__changer:last-child {
+        border: none;
+    }
 
+}
+
+
+
+@media (max-width:992px) {
+
+
+    .header {
+        &__search-input {
+            width: 75%;
+        }
+    }
+
+    .page {
         &__changer {
 
             .fa-chevron-left,
@@ -1353,19 +1399,7 @@ a {
 
 
 
-@media (max-width:1200px) {
-
-    .container-fluid {
-        width: 100%;
-    }
-
-
-    &__vert-center {
-        transform: translateY(calc(50% - 80px));
-    }
-}
-
-@media (max-width:1440px) {
+@media (max-width:480px) {
 
     .owl-main {
         .fa-chevron-left {
@@ -1378,13 +1412,9 @@ a {
             font-size: 2rem;
         }
 
-        .fa-chevron-left,
-        .fa-chevron-right {
-            transform: scale(0.5);
 
-            &:hover {
-                opacity: 0.5;
-            }
+        &__item {
+            height: calc(100vh - 60px);
         }
     }
 }
