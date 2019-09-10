@@ -660,16 +660,17 @@ a {
   text-decoration: none;
 }
 
-.owl-articles .owl-item a:hover {
-  text-decoration: none;
-}
-
 .owl-articles__item:hover {
   background: #18c8f3;
   background-image: linear-gradient(55deg, #12b2e9 0%, #18c8f3 100%);
   background-image: -ms-linear-gradient(55deg, #12b2e9 0%, #18c8f3 100%);
   -webkit-box-shadow: 0px 3px 18px 0px rgba(34, 202, 255, 0.36);
           box-shadow: 0px 3px 18px 0px rgba(34, 202, 255, 0.36);
+  color: white !important;
+  cursor: pointer;
+}
+
+.owl-articles__item:hover a {
   color: white !important;
 }
 
