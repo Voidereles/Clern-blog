@@ -55,6 +55,7 @@ $(document).ready(function () {
         margin: 15,
         autoplay: true,
         lazyLoad: true,
+        autoplayHoverPause: true,
         dots: false,
         items: 1,
         responsiveClass: true,
@@ -77,6 +78,7 @@ $(document).ready(function () {
         lazyLoad: true,
         items: 1,
         nav: false,
+        autoplayHoverPause: true,
         dots: false,
         responsiveClass: true,
         responsive: {
@@ -99,6 +101,7 @@ $(document).ready(function () {
         loop: true,
         margin: 15,
         autoplay: true,
+        autoplayHoverPause: true,
         lazyLoad: true,
         dots: false,
         responsiveClass: true,
