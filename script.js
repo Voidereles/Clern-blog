@@ -89,11 +89,14 @@ $(document).ready(function () {
         margin: 15,
         autoplay: true,
         lazyLoad: true,
+        dots: false,
         items: 1,
         responsiveClass: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+
+                dots: false
             },
 
             992: {
@@ -111,7 +114,6 @@ $(document).ready(function () {
         dots: false,
         responsiveClass: true,
         responsive: {
-
             1200: {
                 items: 4,
                 nav: false
