@@ -296,7 +296,7 @@
                                     </div>
                                     <div class="col-2 comments"> <a href="#comments">
                                             <img class="comment-icon" src="images/comment-icon.png" alt="Komentarze">
-                                            <span class="">1</span></div></a>
+                                            <span class="">1</span></a></div>
                                 </div>
                                 <hr>
                             </div>
@@ -395,12 +395,11 @@
                             <h4 class="col-12 comments-section__heading mt-5 text-center">Napisz komentarz</h4>
 
                             <div class="col-12 col-lg-7 pb-3 pt-2 mx-auto">
-                                <form action="">
+                                <form>
                                     <div class="row">
                                         <div class="form-group col-12 col-lg-12 mt-2">
                                             <label class="form-label" for="comment">Komentarz</label>
-                                            <input id="comment" type="textarea" name="comment"
-                                                class="form-input"></input>
+                                            <input id="comment" type="text" name="comment" class="form-input" />
                                         </div>
 
                                         <div class="form-group col-12 col-lg-6 mt-2">
@@ -410,7 +409,7 @@
 
                                         <div class="form-group col-12 col-lg-6 mt-2">
                                             <label class="form-label" for="comment-email">Adres e-mail</label>
-                                            <input id="comment-email" type="comment-email" name="comment-email"
+                                            <input id="comment-email" type="email" name="comment-email"
                                                 class="form-input" required />
                                         </div>
 
@@ -468,11 +467,10 @@
                                     <h3 class="newsletter__heading text-white py-3">Newsletter</h3>
                                 </div>
                                 <div class="col-12 col-lg-4 pb-3 pt-2">
-                                    <form action="" class="newsletter__form">
+                                    <form class="newsletter__form">
                                         <div class="form-group">
                                             <label class="form-label" for="email">Twój adres email</label>
-                                            <input id="email" type="email" name="email" class="form-input"
-                                                type="text" />
+                                            <input id="email" type="email" name="email" class="form-input" />
                                         </div>
                                     </form>
 
@@ -560,25 +558,25 @@
                     <div class="row pt-0 py-5">
                         <div class="footer__column col-6 col-lg-2">
                             <ul class="list-unstyled">
-                                <li class="mb-1"><a class="footer__link" href="#">Porady
+                                <li class="mb-1"><a class="footer__link" href="#">Porady</a>
                                 </li>
 
-                                <li class="mb-1"><a class="footer__link" href="#">Promocje
+                                <li class="mb-1"><a class="footer__link" href="#">Promocje</a>
                                 </li>
 
-                                <li class="mb-1"><a class="footer__link" href="#">Media
+                                <li class="mb-1"><a class="footer__link" href="#">Media</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="footer__column col-6 col-lg-2">
                             <ul class="list-unstyled">
-                                <li class="mb-1"><a class="footer__link" href="#">Dla Biznesu
+                                <li class="mb-1"><a class="footer__link" href="#">Dla Biznesu</a>
                                 </li>
 
-                                <li class="mb-1"><a class="footer__link" href="#">O nas
+                                <li class="mb-1"><a class="footer__link" href="#">O nas</a>
                                 </li>
 
-                                <li class="mb-1"><a class="footer__link" href="#">Kontakt
+                                <li class="mb-1"><a class="footer__link" href="#">Kontakt</a>
                                 </li>
                             </ul>
                         </div>
@@ -595,8 +593,9 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/9b57601780.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.0.js">
-    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async defer></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'
         integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous'>
     </script>
@@ -605,8 +604,8 @@
     </script>
 
 
-    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="script.js" async defer></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
