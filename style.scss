@@ -422,13 +422,6 @@ a {
 }
 
 
-.move-left {
-    transform: translateX(-10vw);
-    width: calc(100% + 10vw);
-}
-
-
-
 .main {
     background-color: $clern-grey;
     overflow-x: hidden;
