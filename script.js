@@ -19,7 +19,7 @@ $('input').blur(function () {
 
 
 $(document).ready(function () {
-    var time = 5; // time in seconds
+    var time = 5555; // time in seconds
 
     var $progressBar,
         $bar,
