@@ -23,9 +23,12 @@ $variable-text-newsletter-email:0.98rem;
 $fast:0.2s;
 $variable-text-doubled:200%;
 
+$variable-cookie-height:75px;
+
 body {
     color: $clern-dark-text;
     font-family: vag-rundschrift-d, sans-serif;
+    font-display: auto;
     font-weight: 300;
 }
 
@@ -216,9 +219,9 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
-    height: 40px;
+    min-height: $variable-cookie-height;
     text-align: center;
-    line-height: 40px;
+    padding: 1rem 3.5rem;
     background-color: #8dce57;
     background: rgba(92, 182, 90, 1);
     background-image: linear-gradient(55deg, rgb(92, 183, 90) 0%, rgb(147, 208, 86) 99%);
@@ -231,11 +234,11 @@ a {
     font-weight: 100;
     transition: .8s;
     animation: slideIn .8s;
-    animation-delay: .8s;
+    // animation-delay: .8s;
 
     .message {
-        white-space: nowrap;
         text-shadow: 0 1px 0 darken(rgb(92, 183, 90), 10%);
+        text-align: center;
 
         @media (max-width: 767px) {
             display: none;
@@ -249,11 +252,19 @@ a {
             display: inline-block;
         }
     }
+
+    a {
+        color: darken(rgb(92, 183, 90), 20%);
+
+        &:hover {
+            color: darken(rgb(92, 183, 90), 90%);
+        }
+    }
 }
 
 @keyframes slideIn {
     0% {
-        transform: translateY(50px);
+        transform: translateY(150px);
     }
 
     100% {
@@ -288,13 +299,8 @@ a {
     display: none;
 
     &:checked+.cookie-bar {
-        transform: translateY(50px);
+        transform: translateY(150px);
     }
-}
-
-a {
-    color: rgb(92, 242, 255);
-    ;
 }
 
 

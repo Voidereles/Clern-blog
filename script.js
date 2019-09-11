@@ -66,7 +66,7 @@ $(document).ready(function () {
                 dots: false
             },
 
-            992: {
+            600: {
                 items: 2
             }
         }
@@ -108,6 +108,10 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
+                nav: false
+            },
+            600: {
+                items: 2,
                 nav: false
             },
             992: {

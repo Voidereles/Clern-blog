@@ -1,6 +1,7 @@
 body {
   color: #322c2e;
   font-family: vag-rundschrift-d, sans-serif;
+  font-display: auto;
   font-weight: 300;
 }
 
@@ -197,9 +198,9 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 40px;
+  min-height: 75px;
   text-align: center;
-  line-height: 40px;
+  padding: 1rem 3.5rem;
   background-color: #8dce57;
   background: #5cb65a;
   background-image: linear-gradient(55deg, #5cb75a 0%, #93d056 99%);
@@ -212,13 +213,11 @@ a {
   transition: .8s;
   -webkit-animation: slideIn .8s;
           animation: slideIn .8s;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
 }
 
 .cookie-bar .message {
-  white-space: nowrap;
   text-shadow: 0 1px 0 #459b43;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -237,10 +236,18 @@ a {
   }
 }
 
+.cookie-bar a {
+  color: #357734;
+}
+
+.cookie-bar a:hover {
+  color: black;
+}
+
 @-webkit-keyframes slideIn {
   0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -250,8 +257,8 @@ a {
 
 @keyframes slideIn {
   0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -289,12 +296,8 @@ a {
 }
 
 .checkbox-cb:checked + .cookie-bar {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-}
-
-a {
-  color: #5cf2ff;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
 }
 
 .header {
