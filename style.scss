@@ -938,6 +938,7 @@ a {
 
     &__quote {
         color: $clern-blue;
+        font-size: $variable-text-menu;
     }
 
     &__deco-line {
@@ -1424,11 +1425,14 @@ a {
     .header {
         &__nav-item {
             width: 100%;
-            text-align: left !important;
+        }
+
+        &__nav-link {
+            display: inline-block !important;
         }
 
         &__search-input {
-            width: 65%;
+            width: 65vw;
         }
 
         .z-fix {
@@ -1450,7 +1454,7 @@ a {
 
     .header {
         &__search-input {
-            width: 75%;
+            width: 75vw;
         }
     }
 
