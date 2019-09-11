@@ -13,6 +13,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.css">
+
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
         integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,6 +29,14 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <input class="checkbox-cb" id="checkbox-cb" type="checkbox" />
+    <div class="cookie-bar">
+        <span class="message">Ta strona korzysta z plików cookie, aby zapewnić Ci niesamowite wrażenia. Korzystając z
+            tej strony ty
+                         zgodzić się na <a href="#">warunki</a></span>
+        <span class="mobile">Ta strona korzysta z plików cookie, <a href="#">dowiedz się więcej</a></span>
+        <label for="checkbox-cb" class="close-cb">x</label>
+    </div>
     <header class="header">
         <nav id="headerNavbar" class="navbar navbar-light header__navbar navbar-expand-xl custom-carets p-0">
             <div class="row w-100 mx-auto d-flex justify-content-between z-fix">
@@ -50,7 +60,7 @@
 
                         <div class="navbar-nav header__nav col-xl-8 mx-auto">
                             <ul id="headerNavPills"
-                                class="nav nav-pills nav-fill header__nav-pills flex-xl-row px-0 mx-2 mx-xl-auto">
+                                class="nav nav-pills nav-fill header__nav-pills flex-lg-row px-0 mx-2 mx-xl-auto">
                                 <li class="nav-item header__nav-item px-0 px-xl-2">
                                     <a class="nav-link header__nav-link" href="#">Porady</a>
                                 </li>
@@ -74,7 +84,7 @@
 
 
 
-                        <div class="header__social col-12 col-xl-4 offset-1 mx-auto mx-xl-0 py-5 py-xl-0">
+                        <div class="header__social col-12 col-xl-4 offset-1 mx-auto mx-xl-0 py-5 py-xl-0 p-0">
                             <div class="row px-3 p-xl-0 ">
 
                                 <div class="social-icons">
@@ -90,10 +100,10 @@
                                         xml:space="preserve">
 
                                         <path d="M350.1,407.4c-104.6,70-233.1,40.4-300.7-43.7c-70.6-87.8-63.8-211.7,8.9-291c77.9-84.9,204.2-95.5,293.4-31.9
-                    c49.5,35.3,80.4,83,91.1,143c10.6,59.7-1.7,114.9-35.7,166.5c1.7,1.2,3.6,2.3,5.2,3.8c28.8,28.7,57.6,57.4,86.2,86.2
-                    c21.2,21.4,14.9,56.1-12.1,67.7c-16.2,6.9-33.4,3.3-46.7-10c-28.4-28.4-56.8-56.8-85.1-85.2C353,411.3,351.7,409.4,350.1,407.4z
-                     M227.7,75.1c-79.2-2.4-150,58.8-152.6,144.2c-2.4,77.6,56.6,148.3,142,152.2c80.3,3.6,150.4-57.2,154.3-141.8
-                    C375.1,148.3,312.3,78.1,227.7,75.1z" />
+                c49.5,35.3,80.4,83,91.1,143c10.6,59.7-1.7,114.9-35.7,166.5c1.7,1.2,3.6,2.3,5.2,3.8c28.8,28.7,57.6,57.4,86.2,86.2
+                c21.2,21.4,14.9,56.1-12.1,67.7c-16.2,6.9-33.4,3.3-46.7-10c-28.4-28.4-56.8-56.8-85.1-85.2C353,411.3,351.7,409.4,350.1,407.4z
+                 M227.7,75.1c-79.2-2.4-150,58.8-152.6,144.2c-2.4,77.6,56.6,148.3,142,152.2c80.3,3.6,150.4-57.2,154.3-141.8
+                C375.1,148.3,312.3,78.1,227.7,75.1z" />
                                     </svg>
 
 
@@ -592,20 +602,56 @@
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/9b57601780.js"></script>
-
+    <div id="outdated">
+        <h6>Your browser is out-of-date!</h6>
+        <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser"
+                href="https://bestvpn.org/outdatedbrowser/"> Outdated Browser </a></p>
+        <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async defer></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'
         integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous'>
     </script>
+
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/9b57601780.js"></script>
+
+
+
+
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
-        integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'>
+        integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy' crossorigin='anonymous'
+        async>
     </script>
 
+    <script src="outdated-browser-develop/outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script>
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function () {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
 
-    <script src="script.js" async defer></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+        addLoadEvent(function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'transform',
+                languagePath: 'outdated-browser/outdatedbrowser/lang/en.html'
+            })
+        });
+    </script>
 </body>
 
 </html>
